@@ -31,6 +31,10 @@ streamlit.text(fruityvice_response.json())
 fruityvice_normalized=pandas.json_normalize(fruityvice_response.json())
 streamlit.dataframe(fruityvice_normalized)
 
+streamlit.header('Fruityvice Fruit Advice2!')
+fruit_choice=streamlit.text_input('What fruit whould you like to add?', 'jackfruit')
+streamlit.write('Thanks for adding ',fruit_choice)
+
 #my_cnx=snowflake.connector.connect(**streamlit.secrets["snowflake"])
 #my_cur=my_cnx.cursor()
 #my_cur.execute("select current_user(), current_account(), current_region()")
