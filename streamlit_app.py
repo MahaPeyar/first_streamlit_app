@@ -23,9 +23,6 @@ streamlit.header('Fruityvice Fruit Advice!')
 fruit_choice=streamlit.text_input('What fruit whould you like information about?', 'Kiwi')
 streamlit.write('The user entered ',fruit_choice)
 
-streamlit.header('Fruityvice Fruit Advice2!')
-fruit_choice1=streamlit.text_input('What fruit whould you like to add?', 'jackfruit')
-streamlit.write('Thanks for adding ',fruit_choice1)
 
 import snowflake.connector
 
