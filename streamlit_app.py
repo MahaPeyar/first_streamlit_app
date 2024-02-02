@@ -51,7 +51,7 @@ my_data_row1=my_cur1.fetchone()
 streamlit.text("The current fruit load list contains")
 streamlit.text(my_data_row1)  
 my_data_row2=my_cur1.fetchall()
- streamlit.dataframe(my_data_row2)
+streamlit.dataframe(my_data_row2)
 
 
 
