@@ -54,6 +54,7 @@ streamlit.text(my_data_row1)
 my_data_row2=my_cur1.fetchall()
 streamlit.dataframe(my_data_row2)
 my_cur2.execute("insert into pc_rivery_db.public.fruit_load_list values('from streamlit')")
+my_cur2.execute("select * from pc_rivery_db.public.fruit_load_list")
 my_data_row3=my_cur2.fetchall()
 streamlit.dataframe(my_data_row3)
 
