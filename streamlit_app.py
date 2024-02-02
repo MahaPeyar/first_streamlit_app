@@ -49,7 +49,9 @@ my_cur1=my_cnx.cursor()
 my_cur1.execute("select * from pc_rivery_db.public.fruit_load_list")
 my_data_row1=my_cur1.fetchone()
 streamlit.text("The current fruit load list contains")
-streamlit.text(my_data_row1)   
+streamlit.text(my_data_row1)  
+my_data_row2=my_cur1.fetchall()
+ streamlit.dataframe(my_data_row2)
 
 
 
