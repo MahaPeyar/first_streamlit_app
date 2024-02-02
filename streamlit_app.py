@@ -23,6 +23,10 @@ streamlit.header('Fruityvice Fruit Advice!')
 fruit_choice=streamlit.text_input('What fruit whould you like information about?', 'Kiwi')
 streamlit.write('The user entered ',fruit_choice)
 
+streamlit.header('Fruityvice Fruit Advice2!')
+fruit_choice1=streamlit.text_input('What fruit whould you like to add?', 'jackfruit')
+streamlit.write('Thanks for adding ',fruit_choice1)
+
 import snowflake.connector
 
 import requests
@@ -49,8 +53,6 @@ my_data_row1=my_cur1.fetchone()
 streamlit.text("The current fruit load list contains")
 streamlit.text(my_data_row1)   
 
-streamlit.header('Fruityvice Fruit Advice2!')
-fruit_choice1=streamlit.text_input('What fruit whould you like to add?', 'jackfruit')
-streamlit.write('Thanks for adding ',fruit_choice1)
+
 
 
